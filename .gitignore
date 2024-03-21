@@ -1,0 +1,10 @@
+results/
+**/__pycache__/
+**/.idea/
+*.npz
+*.cache
+*.pth
+/log
+/demo
+!requirements.txt
+

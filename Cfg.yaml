@@ -1,0 +1,20 @@
+base:
+  model: LSTM                 #选择模型 LSTM CNN_LSTM Seq2Seq
+  input_len: 30              #输入长度
+  output_col: 0               #输出的列序号
+  output_name: 开盘         #输出的名称
+  output_len: 7              #输出长度
+  standard_mode: 2            #标准化模式 0:无标准化 1:Z-score标准化 2:最大最小标准化
+
+
+train:
+  test_rate: 0.1            #测试集比例
+  val_rate: 0.2             #验证集比例
+  batch_size: 128            #批大小
+  epochs: 200                #训练轮数
+  hidden_size: 256          #隐藏层大小
+  learn_rate: 0.001         #学习率
+  num_layers: 1             #LSTM层数
+  step_size: 1              #学习率衰减步长
+  gamma: 0.95               #学习率衰减率
+
