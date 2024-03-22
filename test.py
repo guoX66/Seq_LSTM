@@ -6,7 +6,8 @@ if __name__ == '__main__':
     os.makedirs(f'log/{r_name}', exist_ok=True)
     txt_list = []
     all_data = data[:, output_col]
-    if standard_mode is not None:
+    mn = None
+    if standard_mode != 0:
         mn = [[train_mn[0][i], train_mn[1][i]] for i in range(len(train_mn[0]))]
         mn = mn[output_col]
 
